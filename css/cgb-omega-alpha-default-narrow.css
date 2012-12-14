@@ -1,0 +1,12 @@
+/* This file will hold styles that are loaded using the same media query as the narrow grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the normal and widescreen layouts. You may override these styles in the normal 
+ *  and widescreen CSS files as appropriate. */
+ 
+#block-views-events-block{width:auto}
+#block-views-events-block .view-content{width:auto}
+#block-views-events-block .ribbon-front{width:auto}
+#consultants-list-frontpage .front-page-list li{width:200px;height:275px}
+#block-views-events-block .ribbon-edge-topright{display:none}
+#block-views-events-block a{word-wrap: break-word;}
+#block-views-events-block ul{margin:0 10px}
