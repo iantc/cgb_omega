@@ -1,2 +1,2 @@
-cgb_omega
+Theme for CGB site. Child theme of Omega.
 =========
