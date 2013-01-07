@@ -19,43 +19,37 @@ h1, h2 {
 
 /* site-wide defaults */
 a:link, a:visited {text-decoration:none;color:#537898}
-
 .site-name{font-size:36px;font-weight:bold;margin:10px 0 0}
 .site-name a{color: #97a32c}
 h1#page-title{padding-bottom: 17px;margin: 18px 0;border-bottom: 1px solid #EEE;color: #886677}
 .front #page-title{display:none}
-
 #breadcrumb{margin-top:8px;display:none}
 .breadcrumb{margin:0}
-#block-views-exp-events-page{float:right;margin:6px 0 0;position: absolute;
-right: 10px;
-top: -10px;}
-.front #block-views-exp-events-page{top:10px}
+#block-views-exp-events-page{margin:0;position: absolute;left: 23px;top: 20px;}
+.front #block-views-exp-events-page{}
 .node-page p{max-width:660px}
 
 /* user zone (top of page) */
 #zone-user-wrapper{background:url("../img/bg1.png") #696969;}
 #region-user-first{height:10px}
 #region-user-second{min-width:480px}
-#zone-header-wrapper{background:#f4f4f4;padding:15px 0 0}
+#zone-header-wrapper{background:#f4f4f4;padding:25px 0 0}
 #zone-content-wrapper{padding:20px}
 .front #zone-content-wrapper{padding-top:0}
 
 /* login form */
-#region-user-second #block-user-login{background-color:#e6e8df;float:right;position:relative;border: 1px solid rgba(0, 0, 0, 0.05);
-    border-radius: 4px 4px 4px 4px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
-    margin:-4px 0 15px;
-    min-height: 20px;
-    padding:0;}
+#region-user-second #block-user-login{background-color:#e6e8df;float:right;position:relative;border: none;
+    border-radius: 4px 4px 4px 4px;-moz-border-radius: 4px 4px 4px 4px;-webkit-border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    margin:-4px 0 15px;min-height: 20px;padding:0;}
 #block-user-login{float:left;}
-#block-user-login h2{float:left;color:#666;font-size:13px;font-weight:bold;font-family:Arial, Helvetica, sans-serif;margin:0 0 9px;line-height:20px;padding: 15px 10px 0;}
-#user-login-form{margin:0;padding:0 10px 0 0;clear:both}
+#block-user-login h2{float:left;color:#666;font-size:13px;font-weight:bold;font-family:Arial, Helvetica, sans-serif;margin:0 0 5px;line-height:20px;padding: 15px 10px 0;}
+#user-login-form{margin:0;padding:0;clear:both}
 #user-login-form label{float:left; margin:5px 7px 0 0}
 #user-login-form .form-item{float:left; margin-left:10px}
 #user-login-form #edit-name{width:120px;height:25px}
 #user-login-form #edit-pass{width:100px;height:25px}
-#user-login-form .item-list{margin:-40px 0 0 -35px;float:right;}
+#user-login-form .item-list{background:#ccc;margin:-36px 0 0 -55px;float:right;padding:3px 10px 0 10px;border-radius: 0 0 0 4px;-moz-border-radius: 0 0 0 4px;-webkit-border-radius: 0 0 0 4px;}
 #user-login-form .item-list ul{margin:0}
 #user-login-form li{margin:5px0 0;float:left}
 #user-login-form li.first{margin-right:20px;}
@@ -73,7 +67,7 @@ top: -10px;}
 #search-block-form h2{display:none}
 #views-exposed-form-events-page .form-item{display:inline}
 #views-exposed-form-events-page .form-actions:before,#views-exposed-form-events-page .form-actions:after {content: none;display: inline;}
-#views-exposed-form-events-page  label,#views-exposed-form-events-page  .views-widget{float:left;margin: 0 6px 0 0}
+#views-exposed-form-events-page  label,#views-exposed-form-events-page  .views-widget{float:left;margin: 0 6px 0 0;color:#fff;}
 #views-exposed-form-events-page  label{margin:4px 10px 0 0}
 #views-exposed-form-events-page {float:right;margin:0;padding:0}
 #edit-populate-wrapper, .views-submit-button{float:left}\
@@ -140,7 +134,7 @@ ul.secondary li {border-right:none;}
 .table-striped tbody tr:nth-child(even) td, .table-striped tbody tr:nth-child(even) th {background-color: #fff;}
 .table th{background:#f1f1f1}
 
-/* pagination 
+/* pagination
 .pagination a{background:transparent;border: none}
 .pagination .active_page{background:#f1f1f1}*/
 
@@ -199,7 +193,7 @@ border-bottom-right-radius: 4px;
 #consultants-list-frontpage .views-field-realname{font-weight:bold;display:block;border-bottom:1px solid #ccc;padding:12px 0 8px;}
 #consultants-list-frontpage .views-field-picture{padding: 6px 0 6px 6px;}
 #consultants-list-frontpage ul{margin:0;padding:0}
-#consultants-list-frontpage .front-page-list li{float:left;background:#F7F6F1;list-style:none;padding:14px;margin:0 1.75% 12px 0;border:1px solid #ddd;width:224px;height:245px}
+#consultants-list-frontpage .front-page-list li{float:left;background:#F7F6F1;list-style:none;padding:7px 14px 14px;margin:0 1.75% 12px 0;border:1px solid #ddd;width:224px;height:265px}
 #consultants-list-frontpage .expertise-info div{display:inline;}
 #consultants-list-frontpage .front-page-list{clear:both;float:left;width:99%}
 #consultants-list-frontpage .more-link{float:left;padding: 0 14px;line-height: 34px;text-decoration: none;margin-top:18px;border: 1px solid #DDD;border-radius:5px;background: white;}
