@@ -1,5 +1,4 @@
-/* This file will hold styles for the mobile version of your website (mobile first). */
-/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+@import url('https://fonts.googleapis.com/css?family=Ropa+Sans');
 
 body {
 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -19,7 +18,7 @@ h1, h2 {
 
 /* site-wide defaults */
 a:link, a:visited {text-decoration:none;color:#537898}
-.site-name{font-size:36px;font-weight:bold;margin:10px 0 0}
+.site-name{font-size:36px;font-weight:bold;margin:10px 0 0;font-family: 'Ropa Sans', 'Abel', Arial}
 .site-name a{color: #686868}/* 91aa68 97a32c */
 h1#page-title{padding-bottom: 17px;margin: 18px 0;border-bottom: 1px solid #EEE;color: #886677}
 .front #page-title{display:none}
