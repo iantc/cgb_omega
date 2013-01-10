@@ -2,7 +2,7 @@
 <html lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"<?php print $rdf->version . $rdf->namespaces; ?>>
 <head<?php print $rdf->profile; ?>>
   <?php print $head; ?>
-  <title><?php print $head_title; ?></title>  
+  <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
   <script type="text/javascript" src="/sites/all/themes/cgb_omega/js/jquery.pajinate.min.js"></script>
@@ -31,26 +31,29 @@
 				rowDivs.length = 0; // empty the array
 				currentRowStart = topPostion;
 				currentTallest = $el.height();
-				rowDivs.push($el);				
+				rowDivs.push($el);
 			} else {
 				// another div on the current row.  Add it to the list and check if it's taller
 				rowDivs.push($el);
 				currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
-			}	 
+			}
 			// do the last row
 			for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
 				rowDivs[currentDiv].height(currentTallest);
-			}				 
+			}
 		});
 		jQuery('#breadcrumb li').append('<span class="divider">/</span>');
+    jQuery('#toboggan-login-link-container a').text('Consultant Sign-In/Register');
 		jQuery('#views-exposed-form-consultants-page').addClass('form-search');
 		jQuery('#block-system-main-menu ul.menu a:contains("Home")').prepend('<i class="icon-home"></i>  ');
 		jQuery('#zone-content table').addClass('table');
-		jQuery('#user-login-form .form-item input').each(function(){
-			var p = jQuery(this).prev('label').text();
-			jQuery(this).attr('placeholder',p);
-		});
-		jQuery('#user-login-form .form-item label').css('display','none');
+    jQuery('#toboggan-login-link').addClass('btn btn-info');
+    jQuery('#block-system-user-menu .menu').addClass('nav nav-pills');
+    jQuery('#region-footer-first .menu').addClass('nav');
+    jQuery('#region-footer-first .menu').parent('.content').addClass('navbar-inner');
+    jQuery('ul.pagination').parent('.item-list').addClass('pagination');
+    jQuery('#region-footer-first .navbar-inner').wrap('<div class="navbar" />');
+    jQuery('#views-exposed-form-events-page .form-item input').attr('placeholder','Find a Consultant');
 		jQuery('#consultants-list-frontpage .profile-link a').text('');
 		jQuery('.pagination li.active').wrapInner('<a />');
 		jQuery('#consultants-list-frontpage .profile-link a').prepend('<i class="icon-chevron-right"></i>');
@@ -60,6 +63,7 @@
 		if (val != null){
 			jQuery(".field-name-field-telephone .field-item").html(val.substring(3, val.length));
 		}
+    jQuery('.page-node .tabs.primary').addClass('nav nav-pills');
 	});
     </script>
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
