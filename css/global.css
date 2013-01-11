@@ -63,7 +63,7 @@ h1#page-title{padding-bottom: 17px;margin: 18px 0;border-bottom: 1px solid #EEE;
 #views-exposed-form-events-page  label{margin:0;display: none;}
 #views-exposed-form-events-page {float:right;padding:10px 20px 0}
 #edit-populate-wrapper, .views-submit-button{float:left}
-#views-exposed-form-events-page #edit-submit-events{margin-top:3px;color:#777;}
+#views-exposed-form-events-page #edit-submit-events{margin-top:3px;color:#777;padding: 5px 10px}
 .view-display-id-page ul{margin:0;padding:0}
 .view-display-id-page ul{margin:0;padding:0 0 12px !important}
 .view-id-events.view-display-id-page .views-field-realname a{font-size:14px;font-weight:bold}
@@ -160,9 +160,17 @@ border-bottom-right-radius: 4px;
 .participating-consultants.view-display-id-page_1 .views-field{padding: 5px 0;display:block;word-wrap: break-word;-ms-word-break: break-all;word-break: break-all;word-break: break-word;-webkit-hyphens: word;-moz-hyphens: word;hyphens: word;}
 .participating-consultants.view-display-id-page_1 .views-field-name,.participating-consultants.view-display-id-block_2 .views-field-field-lastname{font-weight:bold;display:block;border-bottom:1px solid #ccc;padding:10px 0 8px;}
 
-/* Home page highlights */
-#block-views-events-block-2 h2{margin:40px 0 20px;float:left;font-size: 24px;color:#777}
+/* REGISTERED CONSULTANTS LIST */
+.views-widget-per-page{float: left;margin: 0 10px}
+#edit-items-per-page{width:40px;height: 30px;padding-top: 0;}
+.form-item-items-per-page label{display: block;margin:0 0 5px;}
+#edit-submit-consultants{margin-top: 22px;padding: 7px 10px;}
+.view-id-consultants.view-display-id-page .views-field-picture{float: left;margin:0 10px 10px 0;width:105px;overflow: hidden;min-height:110px;}
+.view-id-consultants.view-display-id-page .view-content li{float: left;width:100%;margin:0 20px 20px 0;clear: both;}
+.view-id-consultants.view-display-id-page .views-field-field-company,.view-id-consultants.view-display-id-page  .views-field-name{font-weight: bold;}
 
+/* Home page highlights */
+#block-views-events-block-2 h2{margin:40px 0 20px;float:left;font-size: 24px;color:#777;font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;}
 #consultants-list-frontpage{padding-top:25px}
 #consultants-list-frontpage .item-list{float:right;margin: 20px 5% 0 0;}
 #consultants-list-frontpage .pagination{float:right}
