@@ -30,6 +30,7 @@ h1#page-title{padding-bottom: 17px;margin: 18px 0;border-bottom: 1px solid #EEE;
 #page #section-content{min-height: 450px}
 .front #section-content #zone-content{padding-top: 0}
 .front #block-views-events-block-2{padding-left: 2.75%}
+#zone-user-wrapper .views-widget-per-page{display: none;}
 
 /* user zone (top of page) */
 #zone-user-wrapper{background:#0f8a94;} /*url("../img/bg1.png") #696969*/
@@ -160,14 +161,16 @@ border-bottom-right-radius: 4px;
 .participating-consultants.view-display-id-page_1 .views-field{padding: 5px 0;display:block;word-wrap: break-word;-ms-word-break: break-all;word-break: break-all;word-break: break-word;-webkit-hyphens: word;-moz-hyphens: word;hyphens: word;}
 .participating-consultants.view-display-id-page_1 .views-field-name,.participating-consultants.view-display-id-block_2 .views-field-field-lastname{font-weight:bold;display:block;border-bottom:1px solid #ccc;padding:10px 0 8px;}
 
-/* REGISTERED CONSULTANTS LIST */
+/* Consultant lists - tabbed pages */
 .views-widget-per-page{float: left;margin: 0 10px}
 #edit-items-per-page{width:40px;height: 30px;padding-top: 0;}
 .form-item-items-per-page label{display: block;margin:0 0 5px;}
 #edit-submit-consultants{margin-top: 22px;padding: 7px 10px;}
-.view-id-consultants.view-display-id-page .views-field-picture{float: left;margin:0 10px 10px 0;width:105px;overflow: hidden;min-height:110px;}
-.view-id-consultants.view-display-id-page .view-content li{float: left;width:100%;margin:0 20px 20px 0;clear: both;}
+.view-id-consultants.view-display-id-page .views-field-picture,.page-consultants-participating .view-display-id-page_1 .user-picture{float: left;margin:0 10px 10px 0;width:105px;overflow: hidden;position: absolute;left: 0;text-align: right;padding-top: 5px}
+.view-id-consultants.view-display-id-page .view-content li,.page-consultants-participating .view-display-id-page_1 li{float: left;width:100%;margin:0 20px 20px 0;clear: both;padding: 0 0 0 125px}
 .view-id-consultants.view-display-id-page .views-field-field-company,.view-id-consultants.view-display-id-page  .views-field-name{font-weight: bold;}
+.page-consultants .views-widget-per-page,.page-consultants .view-header{float: left;}
+.page-consultants .views-widget-per-page label,.page-consultants .views-widget-per-page select{float:left;margin-left: 5px;font-size: 13px}
 
 /* Home page highlights */
 #block-views-events-block-2 h2{margin:40px 0 20px;float:left;font-size: 24px;color:#777;font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;}
@@ -393,13 +396,27 @@ background-color: #51A351 !important;}
 .node-event .field-items{max-width:550px;margin-bottom:25px}
 #available-consultants-panel {max-width:660px;padding:20px 40px 12px;background:#EDFEca}
 #available-consultants-panel .view-empty{background:#fff;padding:15px;}
-#ava-consultants-panel h2{font-size: 14px;font-family: Arial, Helvetica, sans-serif;margin-top:40px}
+#ava-consultants-panel{padding-left: 6%}
+#ava-consultants-panel h2{font-size: 14px;font-family: Arial, Helvetica, sans-serif;margin-top:5px;font-weight:bold;}
+#ava-consultants-panel .view-id-events{max-width: 575px}
+#ava-consultants-panel .view-filters{float: right;margin-top: -30px}
+#ava-consultants-panel form{margin: 0}
+#ava-consultants-panel .form-item-items-per-page{width:125px;float: right;}
+#ava-consultants-panel label{float: left;line-height: 30px;margin-right: 5px}
+#ava-consultants-panel select{float: left;font-size:13px;}
 #event-ava-links ul.links.inline{margin:10px 0 25px;clear:both;display:block}
 #event-ava-links ul.inline li{padding:0 !important; margin: 0 !important}
 .front .events-list-block h3{font-size:18px;line-height: normal;}
 .front #block-views-events-block .views-label{display:block;margin-top:9px;padding:0;display:block;float:none;font-weight:bold;background:none;width:auto}
 .front .events-list-block .views-field .field-content {float: none;padding: 0;}
 .front #block-views-events-block ul {clear: both;float: left;margin: 0 10px 10px;position: relative;}
+
+/* Search page */
+.page-consultants-search #zone-content #block-system-main{margin-top: 60px}
+.page-consultants-search #zone-content #block-views-exp-events-page--2{position: absolute;top:75px;}
+.page-consultants-search #zone-content #views-exposed-form-events-page{padding:10px 0 0}
+.page-consultants-search #zone-content #views-exposed-form-events-page #edit-populate{width:300px;}
+
 
 /* node edit */
 .start-date-wrapper,.end-date-wrapper{width:auto!important;clear:none !important; float:left !important}
