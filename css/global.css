@@ -38,6 +38,12 @@ h1#page-title{padding-bottom: 17px;margin: 18px 0;border-bottom: 1px solid #EEE;
 #zone-header-wrapper{background:#f1f1f7;padding:25px 0 0}
 #zone-content-wrapper{padding:20px;background: #fafafa;}
 .front #zone-content-wrapper{padding-top:0}
+#block-masquerade-masquerade{position: absolute;top: 10px}
+#block-masquerade-masquerade h2{font-size: 16px;margin: 0;padding: 0;line-height: normal;color: #fff}
+#edit-masquerade-user-field{margin-bottom: 0 !important;}
+html.js input.form-autocomplete {background-position: 100% 6px;}
+html.js input.throbbing {background-position: 100% -14px;}
+#block-masquerade-masquerade .description{color: #fff;font-size: 12px;padding: 0;margin: 0}
 
 /* login form */
 #block-user-login{}
@@ -223,7 +229,9 @@ border-bottom-right-radius: 4px;
 #field-profile-website-values td{padding:5px}
 .profile .field-label{font-weight:bold;color:#666;font-size:16px;margin: 0 0 6px}
 .profile .field-items{max-width:550px;margin-bottom:25px}
+.page-user .profile .field{margin-left: 275px}
 /*.page-user .zone-content{max-width:860px} */
+.masquerade-switch{position:absolute;top:0;right: 0}
 
 
 /* account registration */
