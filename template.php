@@ -5,24 +5,18 @@
  * This file is empty by default because the base theme chain (Alpha & Omega) provides
  * all the basic functionality. However, in case you wish to customize the output that Drupal
  * generates through Alpha & Omega this file is a good place to do so.
- * 
+ *
  * Alpha comes with a neat solution for keeping this file as clean as possible while the code
  * for your subtheme grows. Please read the README.txt in the /preprocess and /process subfolders
  * for more information on this topic.
  */
-function cgb_omega_form_alter(&$form, &$form_state, $form_id) {
-  if ($form_id == 'user_login_block') {
-    //$form['links'] = Null;
-		$form['div_tag'] = array('#type' => 'markup', '#value' => '<h3 class="form-title">Your Consultant Account</h3>');
-  }
-}
 
 function cgb_omega_form_user_login_block_alter(&$form) {
   $items = array();
   if (variable_get('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)) {
     $items[] = l(t('Register'), 'user/register', array('attributes' => array('title' => t('Create a new user account.'))));
   }
-  $items[] = l(t('Forgot password'), 'user/password', array('attributes' => array('title' => t('If you forgot your password, click to request a new password via e-mail.'))));
+  $items[] = l(t('Forgot password'), 'user/password', array('attributes' => array('title' => t('If you forgot your password, click to request a new password via e-mail.')), 'query' => array('destination' => 'node/13')));
   $form['links'] = array('#markup' => theme('item_list', array('items' => $items)));
 }
 
@@ -67,13 +61,13 @@ function cgb_omega_pager($variables) {
   if ($pager_total[$element] > 1) {
     if ($li_first) {
       $items[] = array(
-        'class' => array('pager-first'), 
+        'class' => array('pager-first'),
         'data' => $li_first,
       );
     }
     if ($li_previous) {
       $items[] = array(
-        'class' => array('pager-previous'), 
+        'class' => array('pager-previous'),
         'data' => $li_previous,
       );
     }
@@ -82,7 +76,7 @@ function cgb_omega_pager($variables) {
     if ($i != $pager_max) {
       if ($i > 1) {
         $items[] = array(
-          'class' => array('pager-ellipsis'), 
+          'class' => array('pager-ellipsis'),
           'data' => '…',
         );
       }
@@ -90,26 +84,26 @@ function cgb_omega_pager($variables) {
       for (; $i <= $pager_last && $i <= $pager_max; $i++) {
         if ($i < $pager_current) {
           $items[] = array(
-            'class' => array('pager-item'), 
+            'class' => array('pager-item'),
             'data' => theme('pager_previous', array('text' => $i, 'element' => $element, 'interval' => ($pager_current - $i), 'parameters' => $parameters)),
           );
         }
         if ($i == $pager_current) {
           $items[] = array(
-            'class' => array('active'), 
+            'class' => array('active'),
             'data' => $i,
           );
         }
         if ($i > $pager_current) {
           $items[] = array(
-            'class' => array('pager-item'), 
+            'class' => array('pager-item'),
             'data' => theme('pager_next', array('text' => $i, 'element' => $element, 'interval' => ($i - $pager_current), 'parameters' => $parameters)),
           );
         }
       }
       if ($i < $pager_max) {
         $items[] = array(
-          'class' => array('pager-ellipsis'), 
+          'class' => array('pager-ellipsis'),
           'data' => '…',
         );
       }
@@ -117,19 +111,21 @@ function cgb_omega_pager($variables) {
     // End generation.
     if ($li_next) {
       $items[] = array(
-        'class' => array('pager-next'), 
+        'class' => array('pager-next'),
         'data' => $li_next,
       );
     }
     if ($li_last) {
       $items[] = array(
-        'class' => array('pager-last'), 
+        'class' => array('pager-last'),
         'data' => $li_last,
       );
     }
     return '<h2 class="element-invisible">' . t('Pages') . '</h2>' . theme('item_list', array(
-      'items' => $items, 
+      'items' => $items,
       'attributes' => array('class' => array('pagination')),
     ));
   }
 }
+
+
