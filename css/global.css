@@ -21,7 +21,7 @@ h1, h2 {
 a:link, a:visited {text-decoration:none;color:#537898}
 .site-name{font-size:36px;font-weight:bold;margin:10px 0 0}
 .site-name a{color: #686868}/* 91aa68 97a32c */
-h1#page-title{padding-bottom: 17px;margin: 18px 0;border-bottom: 1px solid #EEE;color: #886677}
+h1#page-title{padding-bottom: 17px;margin: 18px 0;border-bottom: 1px solid #EEE;font-size: 24px;color:#777;font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;}
 .front #page-title{display:none}
 #breadcrumb{margin-top:8px;display:none}
 .breadcrumb{margin:0}
@@ -171,9 +171,9 @@ border-bottom-right-radius: 4px;
 #edit-items-per-page{width:55px;height: 30px;padding-top: 0;}
 .form-item-items-per-page label{display: block;margin:0 0 5px;}
 #edit-submit-consultants{margin-top: 22px;padding: 7px 10px;}
-.view-id-consultants.view-display-id-page .views-field-picture,.page-consultants-participating .view-display-id-page_1 .user-picture{float: left;margin:0 10px 10px 0;width:105px;overflow: hidden;position: absolute;left: 0;text-align: right;padding-top: 5px}
-.view-id-consultants.view-display-id-page .view-content li,.page-consultants-participating .view-display-id-page_1 .view-content li{float: left;width:100%;margin:0 20px 20px 0;clear: both;padding: 0 0 0 125px;max-width:600px;}
-.view-id-consultants.view-display-id-page .views-field-field-company,.view-id-consultants.view-display-id-page  .views-field-name{font-weight: bold;}
+.view-id-consultants.view-display-id-page .views-field-picture,.page-consultants-participating.view-display-id-page_1 .user-picture{float: left;margin:0 10px 10px 0;width:105px;overflow: hidden;position: absolute;left: 0;text-align: right;padding-top: 5px}
+.view-id-consultants.view-display-id-page .view-content li,.page-consultants-participating.view-display-id-page_1 .view-content li{float: left;width:100%;margin:0 20px 20px 0;clear: both;padding: 0 0 0 125px;max-width:600px;}
+.view-id-consultants.view-display-id-page .views-field-field-company,.view-id-consultants.view-display-id-page  .views-field-name{}
 .page-consultants .views-widget-per-page,.page-consultants .view-header{float: left;line-height: 35px;margin:15px 0 0;}
 .page-consultants-search .views-widget-per-page{margin: 0 6px 0 0}
 .page-consultants .view-header{margin-right: 90px}
@@ -219,7 +219,7 @@ border-bottom-right-radius: 4px;
 .page-user .region-content .tabs ul.primary{border:none}
 .page-user #block-system-main{border:1px solid #ddd;border-bottom:1px solid #ddd;border-right:1px solid #ddd;padding:20px;-webkit-border-radius: 6px 6px 6px 6px;-moz-border-radius:6px 6px 6px 6px;border-radius:6px 6px 6px 6px;margin:0 0 25px}
 .page-user #region-sidebar-first{padding-top:96px}
-.profile .user-picture{float: left;margin:0 20px 0 0;min-height:450px;}
+.profile .user-picture{float: righ;margin:0 0 30px 30px;}
 .profile .user-picture a{border: 1px solid #bbb;padding:3px;display:block}
 .form-wrapper{padding:10px;margin:10px 0}
 .form-wrapper label{font-weight:bold;font-size:14px;color:#666}
@@ -229,7 +229,7 @@ border-bottom-right-radius: 4px;
 #field-profile-website-values td{padding:5px}
 .profile .field-label{font-weight:bold;color:#666;font-size:16px;margin: 0 0 6px}
 .profile .field-items{max-width:550px;margin-bottom:25px}
-.page-user .profile .field{margin-left: 275px}
+
 /*.page-user .zone-content{max-width:860px} */
 .masquerade-switch{position:absolute;top:0;right: 0}
 
@@ -493,3 +493,7 @@ a.contextual-links-trigger {
     margin: 0px !important;
     padding: 0px 2px !important;}
 ##block-system-main-menu a{display:none;}
+
+/* User admin page */
+.page-user-admin #region-sidebar-first, .page-user-admin #region-sidebar-second{display: none}
+.page-user-admin #section-content #region-content{width: 98%;}
