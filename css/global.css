@@ -171,8 +171,35 @@ border-bottom-right-radius: 4px;
 #edit-items-per-page{width:55px;height: 30px;padding-top: 0;}
 .form-item-items-per-page label{display: block;margin:0 0 5px;}
 #edit-submit-consultants{margin-top: 22px;padding: 7px 10px;}
-.view-id-consultants.view-display-id-page .views-field-picture,.page-consultants-participating.view-display-id-page_1 .user-picture{float: left;margin:0 10px 10px 0;width:105px;overflow: hidden;position: absolute;left: 0;text-align: right;padding-top: 5px}
-.view-id-consultants.view-display-id-page .view-content li,.page-consultants-participating.view-display-id-page_1 .view-content li{float: left;width:100%;margin:0 20px 20px 0;clear: both;padding: 0 0 0 125px;max-width:600px;}
+.page-consultants-participating .view-content ul{
+  margin: 0;
+}
+.view-id-consultants.view-display-id-page .view-content li,
+.page-consultants-participating .view-content li{
+  float: left;
+  margin:0;
+  clear: both;
+  padding:15px 0 15px 105px;
+  border-top: 1px solid #ddd;
+  max-width:600px;
+}
+.view-id-consultants.view-display-id-page .views-field-picture,
+.page-consultants-participating .views-field-picture{
+  float: left;
+  margin:0 0 10px -105px;
+  width:105px;
+  overflow: hidden;
+  text-align: right;
+  padding-top: 5px
+}
+.view-id-consultants.view-display-id-page .views-field-nothing,
+.page-consultants-participating .views-field-nothing{
+  padding-left: 15px;
+}
+.view-id-consultants.view-display-id-page .views-field-nothing .name,
+.page-consultants-participating .views-field-nothing .name{
+  font-weight: bold;
+}
 .view-id-consultants.view-display-id-page .views-field-field-company,.view-id-consultants.view-display-id-page  .views-field-name{}
 .page-consultants .views-widget-per-page,.page-consultants .view-header{float: left;line-height: 35px;margin:15px 0 0;}
 .page-consultants-search .views-widget-per-page{margin: 0 6px 0 0}
